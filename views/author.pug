@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    body
+        div(class="jumbotron")
+            div(class= "conrainer")
+                h1#title= title
+
+        table(id="rank" class="table table-hover")
+            thead
+                tr
+                    th channel
+                    th title
+                    th author
+                    th time
+
+            tbody#status
+
+    script(src='/javascripts/jquery-3.4.0.min.js')
+    script(src='/javascripts/author_ajax.js')
